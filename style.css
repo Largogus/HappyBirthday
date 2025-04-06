@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+html, body {
+    background-color: #FFD2A6;
+    font-family: 'Dela Gothic One', serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+}
+
+.text-obj {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    width: 50%;
+    aspect-ratio: 1.833 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    background-image: url('label.png');
+    background-size: cover;
+    border: none;
+    background-position: center;
+}
+
+.label {
+    font-size: 2em;
+    text-wrap: balance;
+    width: 100%;
+    text-align: center;
+}
+
+.button-obj {
+    position: absolute;
+    left: 25%;
+    top: 55%;
+    width: 50%;
+    height: 50%;
+}
+
+.button {
+    width: 100%;
+    aspect-ratio: 2.2 / 1;
+    font-size: 1.5em;
+    background-color: transparent;
+    background-image: url('button.png');
+    background-size: cover;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    font-family: 'Dela Gothic One', serif;
+}
+
+.button:hover {
+    transform: translateY(-7px);
+}
+
+.button:active {
+    transform: translateY(7px);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .text-obj {
+        top: 5%;
+        left: 5%;
+        width: 90%;
+    }
+
+    .label {
+        font-size: 1.8em;
+    }
+    
+    .button-obj {
+        left: 10%;
+        width: 80%;
+    }
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .text-obj {
+        top: 5%;
+        left: 10%;
+        width: 80%;
+    }
+
+    .label {
+        font-size: 1.8em;
+    }
+    
+    .button-obj {
+        left: 17.5%;
+        top: 60%;
+        width: 65%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .text-obj {
+        top: 50vw;
+        left: 5%;
+        width: 90%;
+    }
+
+    .label {
+        font-size: 4vw;
+    }
+    
+    .button-obj {
+        left: 10%;
+        top: 100vw;
+        width: 80%;
+    }
+
+    .button {
+        font-size: 3vw;
+    }
+}
