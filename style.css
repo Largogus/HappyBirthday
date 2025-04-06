@@ -26,8 +26,8 @@ html, body {
 
 .label {
     font-size: 2em;
-    text-wrap: balance;
-    width: 100%;
+    text-wrap: wrap;
+    width: 92%;
     text-align: center;
 }
 
